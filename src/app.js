@@ -18,12 +18,12 @@ app.get("/", (req, resp) => {
   resp.sendFile(__dirname, '/index.html');
 });
 
-app.get("/subscribers", async (req, resp) => {
+app.get("/subscribers", async (req, res) => {
     try{
-        let subscribers = await schema.find();
-        resp.send(200).json(subscribers);
-    } catch(err){
-       resp.send(400);
+        const subscribers = await Subscriber.find();
+        res.json(subscribers);
+    } catch(error){
+       res.status(400).json({message:error.message});
     }
 
 });
@@ -31,25 +31,36 @@ app.get("/subscribers", async (req, resp) => {
 // GET API for getting subscribers by name and Subscribed Channel
 app.get('/subscribers/names', async (req, res) => {
     try {
-        let subscriberByName = await Subscribers.find().select('name subscribedChannel');
+        const subscriberByName = await Subscriber.find().select('name subscribedChannel -_id');
         res.status(200).send(subscriberByName);
     } catch (error) {
-        res.status(400);
+        res.status(404);
     }
 });
+
+ //get all data of subscribers
+ app.get("/subscribers", async (req, res) => {
+    try {
+        let AllSubscribers = await Subscribers.find();
+        res.status(200).send(AllSubscribers);
+    } catch (error) {
+        res.status(404);
+    }
+});
+
 
 
 // GET API for getting subscriber by ID
 app.get('/subscribers/:id', async (req, res) => {
     try {
-        let subscriberByID = await Subscribers.findById(req.params.id);
-        res.status(200).send(subscriberByID);
-    } catch (error) {
-        res.status(400).send({
-            message: error.message,
-        });
+        const subscriber = await Subscriber.findById(req.params.id);
+        if(!subscriber){
+            return res.status(400).json({meassge:"subscriber not found"})
+        }
+        res.json(subscriber)
+    } catch(err){
+        res.status(400).json({message:"subscriber not found"})
     }
 });
-
-
+     
 module.exports = app;
