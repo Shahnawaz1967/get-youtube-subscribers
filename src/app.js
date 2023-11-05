@@ -38,16 +38,6 @@ app.get('/subscribers/names', async (req, res) => {
     }
 });
 
- //get all data of subscribers
- app.get("/subscribers", async (req, res) => {
-    try {
-        let AllSubscribers = await Subscribers.find();
-        res.status(200).send(AllSubscribers);
-    } catch (error) {
-        res.status(404);
-    }
-});
-
 
 
 // GET API for getting subscriber by ID
