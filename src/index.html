@@ -12,18 +12,19 @@
             font-family: Arial, sans-serif;
             margin: 10px;
             padding: 10px;
-            background-color: aqua;
-    
-
-        }
+            /* background-color: rgb(131, 249, 249); */
+            background: rgb(251, 85, 85);
+            background: radial-gradient(circle, rgba(251, 85, 85, 1) 5%, rgba(0, 255, 240, 1) 100%);
+    }
+        
 
         .logo{
-        border: 2px burlywood solid;
+        /* border: 2px burlywood solid; */
         width: full;
         height: 70px;
         justify-content: left;
         padding-left: 10px;
-        background-color: bisque;
+        /* background-color: bisque; */
        }
 
         .container {
@@ -31,13 +32,11 @@
             display: flex;
             flex-direction: column;
             margin-top: 2px;
-            border: 2px burlywood solid;
+            /* border: 2px burlywood solid; */
             width: full;
-            background-color: bisque;
+            /* background-color: bisque; */
             text-align: center;
-            color: brown;
-          
-           
+            color: brown;    
         }
        
     </style>
@@ -45,12 +44,28 @@
 </head>
 
 <body>
-    <div class="logo"><img src="./image/almabetter.png" alt="AlmaBetter" style="width: 16rem; margin-bottom: 20px;">
-        <div class="container">
+    <div class="container">
+    <div class="logo">
+        <img src="./image/almabetter.png" alt="AlmaBetter" style="width: 16rem; margin-bottom: 20px;">
+       
             <h1>Get Youtube Subscribers</h1>
         </div>
 
+        <!-- Project Title and Decription -->
+        
+        <p>This is an AlmaBetter Capstone Project for Getting Youtube Subscribers from the Database</p>
+        <h2>The Webpage contains following APIs-</h2>
+        <ol>
+            <li> <strong>GET </strong> <a href="subscribers"><em>/subscribers</em></a>: Gives a
+                list of all
+                Subscribers from Database</li>
+            <li> <strong>GET </strong><a href="subscribers/names"><em>/subscribers/names</em></a>
+                : Gives a list of all Subscribers by Name and Subscribed Channel</li>
+            <li> <strong>GET </strong><a href="subscribers/:id"></a><em>/subscribers/:id</em>: To Find a subscriber by ID</li>
 
+        </ol>
+
+        </div>
 </body>
 
 </html>
