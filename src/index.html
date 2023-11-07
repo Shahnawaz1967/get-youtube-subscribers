@@ -20,6 +20,7 @@
 
         .logo{
         /* border: 2px burlywood solid; */
+        text-align: center;
         width: full;
         height: 70px;
         justify-content: left;
@@ -28,13 +29,14 @@
        }
 
         .container {
+            
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             margin-top: 2px;
-            /* border: 2px burlywood solid; */
+             border: 2px white solid; 
             width: full;
-            /* background-color: bisque; */
+            background-color: rgb(191, 237, 237); 
             text-align: center;
             color: brown;    
         }
@@ -44,16 +46,17 @@
 </head>
 
 <body>
-    <div class="container">
+    <div>
     <div class="logo">
         <img src="./image/almabetter.png" alt="AlmaBetter" style="width: 16rem; margin-bottom: 20px;">
-       
+    
+    </div>
+     <div class="container">
             <h1>Get Youtube Subscribers</h1>
-        </div>
-
         <!-- Project Title and Decription -->
-        
-        <p>This is an AlmaBetter Capstone Project for Getting Youtube Subscribers from the Database</p>
+<!--         
+        <p>This is an AlmaBetter Capstone Project for Getting Youtube Subscribers from the Database</p>-->
+
         <h2>The Webpage contains following APIs-</h2>
         <ol>
             <li> <strong>GET </strong> <a href="subscribers"><em>/subscribers</em></a>: Gives a
@@ -63,9 +66,10 @@
                 : Gives a list of all Subscribers by Name and Subscribed Channel</li>
             <li> <strong>GET </strong><a href="subscribers/:id"></a><em>/subscribers/:id</em>: To Find a subscriber by ID</li>
 
-        </ol>
-
-        </div>
+        </ol> 
+    
+    </div>
+</div>
 </body>
 
 </html>
