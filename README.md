@@ -9,9 +9,10 @@ This is our Api page to handled the youtube subscribers details:
 
 ## ✅ `Characteristics`
 
-- User can get the all subscribers.
-- User can get the all subscriber with only name and subscribedchannel.
-- user can get the subscriber details by id.
+- Users can get all the subscribers.
+- Users can get all subscribers with only name and subscribed channel.
+- Users can get the subscriber details by id.
+
 
 ## 🍁`About The App`
 
