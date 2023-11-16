@@ -2,6 +2,11 @@
 This is a almabetter's backend capstone project on Get-Youtube-Subscribers using ExpressJs, MongoDb, and NodeJs.
 This project involves developing a backend system for managing YouTube subscribers. We've designed a backend API that delivers responses in JSON format. To maintain a structured codebase, We've adopted a modular approach, where distinct components are stored in separate files. For instance, We've placed the code responsible for connecting to the API in one file, while the code handling database operations is housed in another.
 
+This is our Api page to handled the youtube subscribers details:
+
+![Screenshot 2023-11-16 172412](https://github.com/Prachi-Rajput/get-youtube-subscribers/assets/113363553/81773190-46a7-4b70-a0da-ba54895e6d9b)
+
+
 ## ✅ `Characteristics`
 
 - User can get the all subscribers.
@@ -12,13 +17,25 @@ This project involves developing a backend system for managing YouTube subscribe
 
 The project is an Express.js application that interacts with a MongoDB database. Its purpose is to retrieve information about YouTube subscribers from the MongoDB database. The subscribers' data consists of fields such as id, name, subscribed channel, and subscribed date.
 
+
 The project includes three GET routes, each serving a specific purpose:
 
-1) GET /subscribers: This route retrieves all subscribers' information from the MongoDB collection. It uses Mongoose's find() method to retrieve all documents from the subscribers collection and sends the retrieved data as a response.
+1) **GET /subscribers:** This route retrieves all subscriber's information from the MongoDB collection. 
 
-2) GET /subscribers/:_id: This route retrieves a specific subscriber's information based on the provided _id parameter. The _id corresponds to the unique identifier of a subscriber in the MongoDB collection. It uses Mongoose's findById() method to query the collection for a document with the specified _id and sends the retrieved data as a response.
+![Screenshot 2023-11-16 172430](https://github.com/Prachi-Rajput/get-youtube-subscribers/assets/113363553/8ea314d6-bf57-4185-85d2-dfc489d20221)
 
-3) GET /subscribers/name: This route retrieves subscribers' information based on name and subscribed channel. It uses Mongoose's find() method with a query parameter to filter the collection based on the sname and subscribed channel and sends the retrieved data as a response.
+
+2) **GET /subscribers/:_id:** This route retrieves a specific subscriber's information based on the provided _id parameter. The _id corresponds to the unique identifier of a subscriber in the MongoDB collection. 
+
+ ![Screenshot 2023-11-16 172541](https://github.com/Prachi-Rajput/get-youtube-subscribers/assets/113363553/1b946f69-deae-4fc3-89fe-8c54f5ae2d1d)
+
+
+3) **GET /subscribers/name:** This route retrieves subscribers' information based on name and subscribed channel.
+
+  
+![Screenshot 2023-11-16 172446](https://github.com/Prachi-Rajput/get-youtube-subscribers/assets/113363553/23be06e5-f477-4193-931b-d6067f6409b5)
+
+
 
 ##  🌿 `Project Folder Structure`
 1. [src/app.js]  is used to handle requests and responses.
