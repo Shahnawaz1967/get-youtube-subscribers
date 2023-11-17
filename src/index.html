@@ -37,9 +37,9 @@
             margin-bottom: 50px;
             /* background-color: bisque; */
         }
-    
+
         .container {
-            padding:2px;
+            padding: 2px;
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
@@ -52,14 +52,16 @@
             align-items: center;
             color: brown;
         }
-        h1{
+
+        h1 {
             padding-bottom: 1pt;
         }
-       li{
-        padding: 5px;
-        margin: 1px;
-        text-align: left;
-       }
+
+        li {
+            padding: 5px;
+            margin: 1px;
+            text-align: left;
+        }
     </style>
 
 </head>
@@ -78,12 +80,18 @@
             <!-- <p>This is an AlmaBetter Capstone Project for Getting Youtube Subscribers from the Database</p> -->
             <h2>The Webpage contains following APIs-</h2>
             <ol>
+                <!-- this is the UI for getting all subscribers detail from database -->
                 <li class="list"> <strong>GET </strong> <a href="subscribers"><em>/subscribers</em></a>: Gives a
                     list of all
                     Subscribers from Database</li>
+
+                <!-- this is the UI for getting all subscscribers name and subscribed channel detail only from database -->
                 <li> <strong>GET </strong><a href="subscribers/names"><em>/subscribers/names</em></a>
                     : Gives a list of all Subscribers by Name and Subscribed Channel</li>
-                <li class="list3"> <strong>GET </strong><a href="subscribers/:id"></a><em>/subscribers/:id</em>: To Find a subscriber
+
+                <!-- this is the UI for getting all subscribers detail by giving subscriber id from database -->
+                <li class="list3"> <strong>GET </strong><a href="subscribers/:id"></a><em>/subscribers/:id</em>: To Find
+                    a subscriber
                     by ID</li>
 
             </ol>

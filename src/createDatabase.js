@@ -1,19 +1,29 @@
-const mongoose = require('mongoose')
-const subscriberModel = require('./models/subscribers')
-const data = require('./data')
+const mongoose = require("mongoose");
+const subscriberModel = require("./models/subscribers");
+const data = require("./data");
 
 // Connect to DATABASE
-const DATABASE_URL = "mongodb+srv://ashahnawaz010:WkrqkxVLaDvEZnE7@cluster0.dzgsqgw.mongodb.net/"
+// Mongodbcompass URL
 // const DATABASE_URL = "mongodb://localhost/subscribers";
-mongoose.connect(DATABASE_URL,{ useNewUrlParser: true, useUnifiedTopology: true });
-const db = mongoose.connection
-db.on('error', (err) => console.log(err))
-db.once('open', () => console.log('Database created...'))
+
+// Cluster URL
+const DATABASE_URL =
+  "mongodb+srv://ashahnawaz010:WkrqkxVLaDvEZnE7@cluster0.dzgsqgw.mongodb.net/";
+
+mongoose.connect(DATABASE_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+const db = mongoose.connection;
+db.on("error", (err) => console.log(err));
+db.once("open", () => console.log("Database created..."));
 
 const refreshAll = async () => {
-    await subscriberModel.deleteMany({})
-    // console.log(connection)
-    await subscriberModel.insertMany(data)
-    await mongoose.disconnect();
-}
-refreshAll()
+  await subscriberModel.deleteMany({});
+  // console.log("Deleting Previous Data")
+  await subscriberModel.insertMany(data);
+  // console.log("Inserting Data");
+  await mongoose.disconnect();
+  // console.log("Database Disconnect")
+};
+refreshAll();
