@@ -33,7 +33,7 @@ The project includes three GET routes, each serving a specific purpose:
 ![Screenshot4](https://github.com/Prachi-Rajput/get-youtube-subscribers/assets/113363553/cc3fdecb-a3b5-486b-b68e-c7f79f8d9cff)
 
 
-3) **GET /subscribers/name:** This route retrieves subscribers' information based on name and subscribed channel.
+3) **GET /subscribers/name:** This route retrieves subscriber's information based on name and subscribed channel.
 
 ![Screenshot3](https://github.com/Prachi-Rajput/get-youtube-subscribers/assets/113363553/9c408b3b-2d79-49fe-9be0-3bfe43d27c33)
 
@@ -84,7 +84,7 @@ node createDatabase.js
 5. Start the application:
 
 ```bash
- npm run start
+ node index.js
 ```
 - Go to any Browser and search localhost:3000
 
@@ -101,9 +101,10 @@ This project is created within a team of two members.
 
 - [@Prachi Rajput](https://github.com/Prachi-Rajput)
 - [@MD Shahnawaz](https://github.com/Shahnawaz1967)
+- [@MD Irshad](https://github.com/Irshad7788github)]
 
 
 ##  📚`Feedback`
 
 If you have any feedback, please reach out to us at prachirajput210497@gmail.com /
-ashahnawaz010@gmail.com 
+ashahnawaz010@gmail.com /mdirshad7788alam@gmail.com 
