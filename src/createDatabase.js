@@ -10,12 +10,16 @@ const data = require("./data");
 const DATABASE_URL =
   "mongodb+srv://ashahnawaz010:WkrqkxVLaDvEZnE7@cluster0.dzgsqgw.mongodb.net/";
 
+  //Connect to MongoDB using Mongoose
 mongoose.connect(DATABASE_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 const db = mongoose.connection;
+// If an error occurs during connection, handle and log the error
 db.on("error", (err) => console.log(err));
+
+// If the connection is successful, log a success message
 db.once("open", () => console.log("Database created..."));
 
 const refreshAll = async () => {
