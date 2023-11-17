@@ -94,7 +94,7 @@ Link to visit Youtube Subscriber video:
 
 **Web Deployed Link**: https://get-youtube-subscribers-sjg7.onrender.com/
 
-**API Schema Documentation** : https://documenter.getpostman.com/view/22294077/2s9YXpVyVp
+**API Schema Documentation** : https://documenter.getpostman.com/view/22294077/2s9YXpVyoR
 
 ## 🎋 `COLLABORATORS`
 This project is created within a team of two members.
