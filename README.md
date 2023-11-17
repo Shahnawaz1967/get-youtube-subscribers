@@ -4,7 +4,8 @@ This project involves developing a backend system for managing YouTube subscribe
 
 This is our Api page to handled the youtube subscribers details:
 
-![Screenshot 2023-11-16 172412](https://github.com/Prachi-Rajput/get-youtube-subscribers/assets/113363553/81773190-46a7-4b70-a0da-ba54895e6d9b)
+![Screenshot1](https://github.com/Prachi-Rajput/get-youtube-subscribers/assets/113363553/37cd7664-49c7-41cc-a05e-9cfb761c3953)
+
 
 
 ## ✅ `Characteristics`
@@ -23,18 +24,18 @@ The project includes three GET routes, each serving a specific purpose:
 
 1) **GET /subscribers:** This route retrieves all subscriber's information from the MongoDB collection. 
 
-![Screenshot 2023-11-16 172430](https://github.com/Prachi-Rajput/get-youtube-subscribers/assets/113363553/8ea314d6-bf57-4185-85d2-dfc489d20221)
+![Screenshot2](https://github.com/Prachi-Rajput/get-youtube-subscribers/assets/113363553/0f01e413-771b-44ba-a4ec-f3ebe777d814)
+
 
 
 2) **GET /subscribers/:_id:** This route retrieves a specific subscriber's information based on the provided _id parameter. The _id corresponds to the unique identifier of a subscriber in the MongoDB collection. 
 
- ![Screenshot 2023-11-16 172541](https://github.com/Prachi-Rajput/get-youtube-subscribers/assets/113363553/1b946f69-deae-4fc3-89fe-8c54f5ae2d1d)
+![Screenshot4](https://github.com/Prachi-Rajput/get-youtube-subscribers/assets/113363553/cc3fdecb-a3b5-486b-b68e-c7f79f8d9cff)
 
 
 3) **GET /subscribers/name:** This route retrieves subscribers' information based on name and subscribed channel.
 
-  
-![Screenshot 2023-11-16 172446](https://github.com/Prachi-Rajput/get-youtube-subscribers/assets/113363553/23be06e5-f477-4193-931b-d6067f6409b5)
+![Screenshot3](https://github.com/Prachi-Rajput/get-youtube-subscribers/assets/113363553/9c408b3b-2d79-49fe-9be0-3bfe43d27c33)
 
 
 
@@ -91,7 +92,9 @@ node createDatabase.js
 Link to visit Youtube Subscriber video:
 
 
-Web Deployed Link: https://get-youtube-subscribers-sjg7.onrender.com/
+**Web Deployed Link**: https://get-youtube-subscribers-sjg7.onrender.com/
+
+**API Schema Documentation** : https://documenter.getpostman.com/view/22294077/2s9YXpVyVp
 
 ## 🎋 `COLLABORATORS`
 This project is created within a team of two members.
